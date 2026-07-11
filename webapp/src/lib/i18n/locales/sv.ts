@@ -7,6 +7,7 @@ const sv: Record<string, string> = {
   "nav_my_vault": "Mitt valv",
   "nav_vault_items": "Valv",
   "nav_sends": "Skickat",
+  "nav_generator": "Generator", "txt_password_generator": "Lösenordsgenerator", "txt_password_generator_description": "Skapa ett starkt och unikt lösenord lokalt på den här enheten.", "txt_generator_type": "Generatortyp", "txt_passphrase": "Lösenfras", "txt_generated_password": "Genererat lösenord", "txt_password_strength": "Styrka", "txt_password_strength_weak": "Svagt", "txt_password_strength_fair": "Medel", "txt_password_strength_good": "Bra", "txt_password_strength_strong": "Starkt", "txt_generator_security_note": "Generering sker lokalt. Ditt lösenord skickas aldrig till servern.", "txt_generator_length": "Längd", "txt_generator_character_types": "Teckentyper", "txt_generator_uppercase": "Versaler (A-Z)", "txt_generator_lowercase": "Gemener (a-z)", "txt_generator_numbers": "Siffror (0-9)", "txt_generator_special": "Specialtecken (!@#$%^&*)", "txt_generator_minimum": "Minst", "txt_generator_avoid_ambiguous": "Undvik tvetydiga tecken", "txt_generator_words": "Antal ord", "txt_generator_separator": "Ordavgränsare", "txt_generator_capitalize": "Stor begynnelsebokstav", "txt_generator_include_number": "Inkludera en siffra",
   "nav_backup_strategy": "Molnsäkerhetskopiering",
   "nav_import_export": "Importera och Exportera",
   "nav_group_data_backup": "Data och Säkerhetskopiering",
@@ -1446,5 +1447,13 @@ const sv: Record<string, string> = {
   "txt_auth_request_missing_public_key": "Inloggningsförfrågan för enhet saknar en offentlig nyckel",
   "txt_ip_address": "IP-adress"
 };
+
+Object.assign(sv, {
+  "nav_password_security": "Lösenordssäkerhet", "txt_password_security": "Säkerhetskontroll för lösenord", "txt_password_security_privacy": "Lösenord kontrolleras lokalt. Endast ett anonymt hashprefix skickas till läckdatabasen när du startar kontrollen.", "txt_check_password_security": "Starta kontroll", "txt_checking_password_security": "Kontrollerar", "txt_recheck_password_security": "Kontrollera igen", "txt_password_security_ready": "Ditt valv är redo för en säkerhetskontroll.", "txt_password_security_no_login": "Det finns inga inloggningslösenord att kontrollera.", "txt_password_security_manual": "Kontrollen startar bara när du väljer den. Resultaten stannar på denna sida.", "txt_password_security_no_login_help": "Lägg till en inloggning med lösenord och återvänd sedan hit för att kontrollera den.", "txt_exposed_passwords": "Läckta", "txt_reused_passwords": "Återanvända", "txt_weak_passwords": "Svaga", "txt_passwords_checked": "Kontrollerade", "txt_password_security_unavailable": "{count} lösenordskontroller kunde inte nå läckdatabasen. De markeras inte som säkra.", "txt_password_security_not_checked": "Inte kontrollerad", "txt_password_exposed_count": "Hittades i {count} läckor", "txt_password_reused_count": "Användes {count} gånger", "txt_weak_password": "Svagt lösenord", "txt_no_password_risks": "Inga lösenordsrisker hittades", "txt_open_vault": "Öppna valv", "txt_check_password_breach": "Kontrollera läcka", "txt_password_not_found_in_breaches": "Hittades inte i läckdatabasen", "txt_password_security_check_failed": "Läckkontrollen kunde inte slutföras."
+});
+
+Object.assign(sv, { "txt_password_security_last_checked": "Senast kontrollerad: {value}" });
+Object.assign(sv, { "txt_no_password_risks_in_filter": "Inga lösenordsrisker i denna kategori" });
+Object.assign(sv, { "txt_password_security_show_all": "Show all", "txt_password_security_hide_all": "Hide all", "txt_password_security_jump": "Go to item", "txt_password_security_exposed_short": "Exposed {count} times", "txt_password_security_weak_short": "Weak password", "txt_password_security_reused_short": "Reused" });
 
 export default sv;

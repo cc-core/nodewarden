@@ -7,6 +7,7 @@ const it: Record<string, string> = {
   "nav_my_vault": "La mia Cassaforte",
   "nav_vault_items": "Cassaforte",
   "nav_sends": "Invii",
+  "nav_generator": "Generatore", "txt_password_generator": "Generatore di password", "txt_password_generator_description": "Crea una password forte e univoca localmente su questo dispositivo.", "txt_generator_type": "Tipo di generatore", "txt_passphrase": "Frase segreta", "txt_generated_password": "Password generata", "txt_password_strength": "Robustezza", "txt_password_strength_weak": "Debole", "txt_password_strength_fair": "Discreta", "txt_password_strength_good": "Buona", "txt_password_strength_strong": "Forte", "txt_generator_security_note": "La generazione avviene localmente. La password non viene mai inviata al server.", "txt_generator_length": "Lunghezza", "txt_generator_character_types": "Tipi di caratteri", "txt_generator_uppercase": "Maiuscole (A-Z)", "txt_generator_lowercase": "Minuscole (a-z)", "txt_generator_numbers": "Numeri (0-9)", "txt_generator_special": "Caratteri speciali (!@#$%^&*)", "txt_generator_minimum": "Minimo", "txt_generator_avoid_ambiguous": "Evita caratteri ambigui", "txt_generator_words": "Numero di parole", "txt_generator_separator": "Separatore di parole", "txt_generator_capitalize": "Iniziale maiuscola", "txt_generator_include_number": "Includi un numero",
   "nav_backup_strategy": "Backup su Cloud",
   "nav_import_export": "Importa ed Esporta",
   "nav_group_data_backup": "Dati e Backup",
@@ -1446,5 +1447,13 @@ const it: Record<string, string> = {
   "txt_auth_request_missing_public_key": "Manca una chiave pubblica nella richiesta di accesso del dispositivo",
   "txt_ip_address": "Indirizzo IP"
 };
+
+Object.assign(it, {
+  "nav_password_security": "Sicurezza password", "txt_password_security": "Controllo sicurezza password", "txt_password_security_privacy": "Le password vengono controllate localmente. Solo un prefisso hash anonimo viene inviato al database delle violazioni dopo l'avvio.", "txt_check_password_security": "Avvia controllo", "txt_checking_password_security": "Controllo in corso", "txt_recheck_password_security": "Controlla di nuovo", "txt_password_security_ready": "Il tuo archivio è pronto per un controllo di sicurezza.", "txt_password_security_no_login": "Non ci sono password di accesso da controllare.", "txt_password_security_manual": "Il controllo parte solo quando lo scegli. I risultati restano solo in questa pagina.", "txt_password_security_no_login_help": "Aggiungi un accesso con password, quindi torna qui per controllarlo.", "txt_exposed_passwords": "Esposte", "txt_reused_passwords": "Riutilizzate", "txt_weak_passwords": "Deboli", "txt_passwords_checked": "Controllate", "txt_password_security_unavailable": "{count} controlli non hanno raggiunto il database delle violazioni. Non sono contrassegnati come sicuri.", "txt_password_security_not_checked": "Non controllata", "txt_password_exposed_count": "Trovata in {count} violazioni", "txt_password_reused_count": "Usata {count} volte", "txt_weak_password": "Password debole", "txt_no_password_risks": "Nessun rischio password trovato", "txt_open_vault": "Apri archivio", "txt_check_password_breach": "Controlla violazione", "txt_password_not_found_in_breaches": "Non trovata nel database delle violazioni", "txt_password_security_check_failed": "Impossibile completare il controllo delle violazioni."
+});
+
+Object.assign(it, { "txt_password_security_last_checked": "Ultimo controllo: {value}" });
+Object.assign(it, { "txt_no_password_risks_in_filter": "Nessun rischio password in questa categoria" });
+Object.assign(it, { "txt_password_security_show_all": "Show all", "txt_password_security_hide_all": "Hide all", "txt_password_security_jump": "Go to item", "txt_password_security_exposed_short": "Exposed {count} times", "txt_password_security_weak_short": "Weak password", "txt_password_security_reused_short": "Reused" });
 
 export default it;
